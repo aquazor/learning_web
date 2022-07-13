@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="http://google.com">
+      <label>
+         <p>Nickname: <input name="nickname" required placeholder="Enter your name" type="text"></p>
+      </label>
+      <label>
+         <p>Password: <input type="password" placeholder="Enter your Password"></p>
+      </label>
+      <label>
+         <p>Email: <input placeholder="Enter your email" type="email"></p>
+      </label>
+      <label>
+         <p>Stay logged in <input name="logged" type="checkbox"></p>
+      </label>
+      <label>
+         <p>Male <input type="radio" name="sex" value="male"></p>
+      </label>
+      <label>
+         <p>Female <input type="radio" name="sex" value="female"></p>
+      </label>
+      <label>
+         <p>Choose color: <input type="color" name="color" value="color"></p>
+      </label>
+      <p>Choose your fav animal</p>
+      <p>
+         <select name="animal">
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Mouse</option>
+         </select>
+      </p>
+      <p>Submit data <input type="submit"value="Submit"></p>
+   </form>
+   <form>
+      <p>Input: <input type="text" placeholder="Input some text here"></p>
+      <p>Autofocus <input type="text" autofocus></p>
+      <p>Required <input type="text" required></p>
+      <p>Email <input type="email"></p>
+      <p>Pattern <input type="text" pattern="[0-9]"></p>
+      <p><input type="submit" value="Submit"></p>
+      <datalist id="colors">
+         <option>Red</option>
+         <option>Blue</option>
+         <option>Yellow</option>
+         <option>Green</option>
+      </datalist>
+      <p>Autocomplete <input type="text" list="colors"></p>
+   </form>
+   <input type="text">
+</body>
+</html>

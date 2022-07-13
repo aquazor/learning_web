@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tables</title>
+</head>
+<body>
+   <!--tr table raw - строка таблицы-->
+   <!--td table data - ячейка таблицы-->
+   <!--border не рекомендуется использовать-->
+   <!--th table header - заголовок таблицы-->
+   <!--thead - границы заголовка таблицы-->
+   <!--tbody - границы тела таблицы-->
+   <table>
+      <caption>Spisok predmetov</caption>
+      <thead>
+        <th>Nazvanie</th>
+        <th>Ocenka</th>
+      </thead>
+      <tbody>
+      <tr>
+         <td>Fizika</td>
+         <td>5</td>
+      </tr>
+      <tr> 
+         <td>Matematika</td>
+         <td>5</td>
+      </tr>
+      <tr> 
+         <td>Materiali nanoelectoniki</td>
+         <td>5</td>
+      </tr>
+      <tr> 
+         <td>Informatika</td>
+         <td>5</td>
+      </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <td rowspan="3">FMIP</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>History</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td rowspan="3">Cringe</td>
+            <td>9999</td>
+         </tr>
+         <tr>
+            <td>9999</td>
+         </tr>
+         <tr>
+            <td>9999</td>
+         </tr>
+      </tfoot>
+   </table>
+</body>
+</html>

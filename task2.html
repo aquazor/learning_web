@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <picture>
+      <!--if width 800px or less-->
+      <source media="(max-width: 600px)" srcset="/artur320x200.jpg" />
+      <!--if width 800px or less-->
+      <source media="(max-width: 820px)" srcset="/Images/artur.jpg" />
+      <!--if width 821px or more-->
+      <source media="(min-width: 821px)" srcset="/artur800x400.jpg" />
+      <img src="/artur800x400.jpg" alt="kek" />
+    </picture>
+    <hr />
+    <img
+      srcset="
+        /artur320x200.jpg 320w,
+        /Images/artur.jpg 591w,
+        /artur800x400.jpg 800w
+      "
+      sizes="(max-width: 600px) 320px, (max-width: 850px) 500px, 750px"
+      src="/artur800x400.jpg"
+      alt="kek"
+    />
+  </body>
+</html>

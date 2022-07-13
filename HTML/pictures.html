@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <!--Simple image-->
+   <img src="/HTML/pictures/cat1.jpg" alt="Just a cat" width="300">
+   <!--Responsive image-->
+   <picture>
+      <source media="(min-width: 1024px)" srcset="https://picsum.photos/600/600">
+      <source media="(min-width: 768px)" srcset="https://picsum.photos/300/300">
+      <source media="(min-width: 360px)" srcset="https://picsum.photos/100/100">
+      <img src="https://picsum.photos/300/300" alt="Just a cat">
+   </picture>
+   <!--Images with semantic descriptions-->
+   <figure>
+      <img src="https://picsum.photos/150/300" alt="Just a cat">
+      <img src="https://picsum.photos/150/300" alt="Just a cat">
+      <img src="https://picsum.photos/150/300" alt="Just a cat">
+      <figcaption>Just a simple description</figcaption>
+   </figure>
+</body>
+</html>

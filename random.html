@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 2000px;
+      }
+      .items {
+        height: 400px;
+
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; Выравнивание при сворачивании */
+      }
+      .item {
+        width: 125px;
+        height: 125px;
+      }
+      .red {
+        background-color: red;
+        /* flex-grow: 0;
+        flex-shrink: 1; */
+        align-self: flex-start;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+        align-self: flex-end;
+      }
+      .blue {
+        background-color: blue;
+        align-self: flex-end;
+      }
+      .grey {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item red"></div>
+      <div class="item green"></div>
+      <div class="item yellow"></div>
+      <div class="item blue"></div>
+      <div class="item grey"></div>
+    </div>
+  </body>
+</html>

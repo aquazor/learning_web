@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="color-purple">Login form</h2>
+      <div class="div-container" kek-background="kek-1">
+        <form>
+          <label for="login">login</label>
+          <input name="login" type="text" placeholder="login" />
+          <label for="password">password</label>
+          <input name="password" type="password" placeholder="password" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <h2>File form</h2>
+      <div class="div-container" kek-background="kek-2">
+        <form>
+          <label for="avatar">avatar</label>
+          <input type="file" name="avatar" accept="image/png, image/jpeg" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <h2>Color form</h2>
+      <div class="div-container">
+        <form>
+          <input type="color" name="color" />
+          <label for="color">Color</label>
+        </form>
+      </div>
+      <h2>Numbers form</h2>
+      <div class="div-container">
+        <form>
+          <label for="age">age</label>
+          <input type="number" name="age" min="18" max="120" value="18" />
+        </form>
+      </div>
+      <h2>Selected form</h2>
+      <div class="div-container">
+        <form>
+          <label for="brands">Choose your phone</label>
+          <select name="brands" id="phone">
+            <option>--Your phone--</option>
+            <option selected>Apple</option>
+            <option>Nokia</option>
+            <option>Xiaomi</option>
+          </select>
+        </form>
+      </div>
+      <h2>Checkbox form</h2>
+      <div class="div-container">
+        <form>
+          <label for="checkbox">Yes</label>
+          <input type="checkbox" name="checkbox" checked />
+        </form>
+      </div>
+      <h2>Radio form</h2>
+      <div class="div-container">
+        <form>
+          <!-- name should be the same -->
+          <label for="radio">Yes</label>
+          <input type="radio" name="radio" checked />
+          <label for="radio">No</label>
+          <input type="radio" name="radio" />
+        </form>
+      </div>
+      <h2>slider form</h2>
+      <div class="div-container">
+        <form>
+          <label for="slider">Yep</label>
+          <input type="range" name="value" id="volume" min="0" step="5" />
+          <output class="volume-output"></output>
+        </form>
+      </div>
+      <div class="div-container">
+        <form>
+          <label for="name">Your name</label>
+          <input type="text" name="name" />
+          <label for="textarea">Textarea</label>
+          <textarea
+            name="textarea"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="kek here"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <hr />
+
+      <!-- Pseudo classes -->
+      <h2>Pseudo classes</h2>
+      <div class="div-container">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+      <div class="div-container">
+        <div class="flex">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="no-color">4</li>
+            <li>5</li>
+          </ul>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+        <div>
+          <span>Span 1</span>
+        </div>
+        <div>
+          <span>Span 1</span>
+          <span>Span 2</span>
+        </div>
+        <h2>kek</h2>
+      </div>
+      <!-- Display flex -->
+      <h2>Display flex</h2>
+      <div class="div-container">
+        <div class="items">
+          <div class="item red"></div>
+          <div class="item yellow"></div>
+          <div class="item green"></div>
+        </div>
+      </div>
+      <!-- Display grid -->
+      <h2>Display grid</h2>
+      <div class="div-container-width-800">
+        <div class="items-2">
+          <div class="item red"></div>
+          <div class="item yellow"></div>
+          <div class="item green"></div>
+        </div>
+      </div>
+      <!-- Scripts -->
+      <script>
+        const volume = document.querySelector("#volume");
+        const output = document.querySelector(".volume-output");
+        output.textContent = volume.value;
+        volume.addEventListener("input", () => {
+          output.textContent = volume.value;
+        });
+      </script>
+    </main>
+  </body>
+</html>
