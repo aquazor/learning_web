@@ -1,0 +1,56 @@
+/* POSITION CAN BE:
+1. Static - default
+2. Inherit 
+3. Fixed - always visible for user 
+4. relative - при перемещении блока на его месте остается его образ, относительно которого располагаются и накладываются друг на друга остальные элементы. Элементы выходят из основного потока, но все еще ведут себя так, как будто они на старом местеы
+5. Absolute - удаляет элемент из общего потока и окружающие элементы его игнорируют */
+
+div {
+  border: 5px solid green;
+}
+img {
+  border: 5px dotted red;
+}
+.b1 {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.rel1 {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.rel2 {
+  position: relative;
+  height: 400px;
+}
+.a1,
+.a2,
+.a3 {
+  position: absolute;
+}
+.a1 {
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+}
+.a2 {
+  top: 100px;
+  left: 100px;
+  z-index: 20;
+}
+.a3 {
+  top: 200px;
+  left: 200px;
+  z-index: 30;
+}
+
+/* ОТНОСИТЕЛЬНЫЕ ВЕЛИЧИНЫ */
+.xD {
+  box-sizing: border-box;
+  height: 200px;
+  float: left;
+  width: 20%;
+  border: 5px dotted blue;
+}
