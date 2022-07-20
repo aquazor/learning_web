@@ -112,7 +112,8 @@ button:hover {
 .collection-item {
   border: 1px solid #959595;
 }
-.collection-item img {
+.collection-item img,
+.collection-item video {
   width: 100%;
 }
 .collection-text {
@@ -133,4 +134,22 @@ button:hover {
   border: 1px solid transparent;
   border-radius: 5px;
   outline: none;
+}
+
+/* FOOTER */
+.footer {
+  background-color: yellowgreen;
+  color: wheat;
+  padding: 20px;
+  margin-top: 30px;
+}
+.footer p {
+  text-align: center;
+}
+.container p > a:hover {
+  background-color: aqua;
+  color: black;
+}
+.container ol li {
+  display: inline-block;
 }

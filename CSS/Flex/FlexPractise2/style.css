@@ -1,0 +1,54 @@
+/* CONTAINER PROPERTIES:
+  flex-direction - определяет направление главной оси
+  flex-wrap - разрешает перенос элементов на новый ряд
+  flex-flow - flex-direction и flex-wrap
+  gap - пространство между элементами
+  justify-content - выравнивание элементов вдоль основной оси относительно контейнера
+  align-items - выравнивание элементов вдоль поперечной оси относительно контейнера
+  align-content - выравнивание элементов вдоль поперечной оси относительно элементов
+  */
+/* ITEM PROPERTIES:
+  align-self - выравнивание элемента вдоль поперечной оси
+  flex-grow - указывает сколько свободного пространства будет забирать элемент
+  flex-shrink - указывает на то, каким пространством элемент готов поделиться
+  flex-basis - базовый размер элемента
+  justify-content - выравнивание элементов вдоль основной оси относительно контейнера
+  flex - flex-grow flex-shrink flex-basis
+  order - определяет порядок элементов (по дефеолту 0 у каждого элемента)
+  */
+/* body {
+  width: 600px;
+} */
+.container {
+  height: 100vh;
+  position: relative;
+  border: 3px solid #333;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-item {
+  width: 250px;
+  margin: 10px;
+  background-color: #dfdfdf;
+  border: 3px solid #333;
+  text-align: center;
+}
+.item-1 {
+  flex: 1 1 auto;
+  min-height: 50px;
+}
+.item-2 {
+  flex: 0 1 auto;
+  min-height: 100px;
+}
+.item-3 {
+  flex: 0 1 auto;
+  min-height: 200px;
+}
+.item-4 {
+  flex: 0 1 auto;
+  min-height: 300px;
+}
