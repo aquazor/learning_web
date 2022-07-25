@@ -38,6 +38,8 @@ hwFunc1();
 let f = new Function("a2", "a3", "return a2 + a3");
 console.log(f(1, 3));
 
+let sum2 = (s1 = 4, s2 = 3) => s1 * s2;
+console.log(sum2);
 //SCOPE
 let name = "Ctac";
 function showName() {

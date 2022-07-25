@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="this.innerHTML = 'kek'">Click on this text</p>
+    <p onclick="changeText(this)">Click on this text</p>
+    <p id="par">Click on this text</p>
+    <p
+      class="mouseover"
+      onmouseover="style.color='red'"
+      onmouseout="style.color='green'"
+    >
+      Mouse over this text
+    </p>
+    Enter your name:
+    <input type="text" onfocus="myFunc(this)" onblur="myFunc2(this)" />
+  </body>
+  <script src="javascript.js"></script>
+</html>
